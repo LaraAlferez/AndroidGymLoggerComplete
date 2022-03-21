@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/titleFragment2">
+    <fragment
+        android:id="@+id/titleFragment2"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.TitleFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment2_to_listExercise"
+            app:destination="@id/listExercise" />
+    </fragment>
+    <fragment
+        android:id="@+id/listExercise"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.ListExercise"
+        android:label="@string/exercisefrag"
+        tools:layout="@layout/list_exercise">
+        <action
+            android:id="@+id/action_listExercise_to_swimmingMain"
+            app:destination="@id/swimmingMain" />
+        <action
+            android:id="@+id/action_listExercise_to_weightsMain"
+            app:destination="@id/weightsMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/swimmingMain"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.SwimmingMain"
+        android:label="@string/swim_main"
+        tools:layout="@layout/swimming_main">
+        <action
+            android:id="@+id/action_swimmingMain_to_swimmingSub"
+            app:destination="@id/swimmingSub" />
+    </fragment>
+    <fragment
+        android:id="@+id/swimmingSub"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.SwimmingSub"
+        android:label="@string/swim_main"
+        tools:layout="@layout/swimming_sub">
+        <action
+            android:id="@+id/action_swimmingSub_to_swimmingMain"
+            app:destination="@id/swimmingMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightsMain"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.WeightsMain"
+        android:label="@string/weights_main"
+        tools:layout="@layout/weights_main">
+        <action
+            android:id="@+id/action_weightsMain_to_weightsSub"
+            app:destination="@id/weightsSub" />
+    </fragment>
+    <fragment
+        android:id="@+id/weightsSub"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.WeightsSub"
+        android:label="@string/weights_main"
+        tools:layout="@layout/weights_sub">
+        <action
+            android:id="@+id/action_weightsSub_to_weightsMain"
+            app:destination="@id/weightsMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_about"
+        android:name="gymfinalproject.stn991540084.larakirtanluigi.AboutFragment"
+        android:label="@string/fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

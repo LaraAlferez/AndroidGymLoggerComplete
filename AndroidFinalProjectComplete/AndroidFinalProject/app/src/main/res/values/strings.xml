@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndroidFinalProject</string>
+    <string name="listLog">Exercises will appear here</string>
+    <string name="exercisefrag">Exercise List</string>
+    <string name="swim_main">Swimming</string>
+    <string name="weights_main">Free-Weights</string>
+    <string name="fragment_about">About Us!</string>
+    <string name="aboutDetail">Hello There!\n\nThis is our gym application for our Final Project for Advanced Android.\n\nWe are:\n\n
+        Luigi Agostino 991451048\n\n
+        Lara Alferez 991540084\n\n
+        Kirtan Parekh 991551563
+    </string>
+</resources>
